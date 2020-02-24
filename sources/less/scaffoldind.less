@@ -1,0 +1,81 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../Fonts/open-sans-v17-cyrillic_latin-300.woff2) format("woff2"),
+  url(../Fonts/open-sans-v17-cyrillic_latin-300.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../Fonts/open-sans-v17-cyrillic_latin-700.woff2) format("woff2"),
+  url(../Fonts/open-sans-v17-cyrillic_latin-700.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+ }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  color: @text-gray;
+  font-style: normal;
+
+  background-color: @bg-white;
+  color: @text-gray;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: @text-gray;
+
+  &:hover, &:focus {
+    color: @text-hover;
+  }
+  &:active {
+    color: @text-down;
+  }
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+	background: red;
+}
+

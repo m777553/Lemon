@@ -1,0 +1,87 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../Fonts/open-sans-v17-cyrillic_latin-300.woff2) format("woff2"), url(../Fonts/open-sans-v17-cyrillic_latin-300.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../Fonts/open-sans-v17-cyrillic_latin-700.woff2) format("woff2"), url(../Fonts/open-sans-v17-cyrillic_latin-700.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-style: normal;
+  background-color: #ffffff;
+  color: #444444;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #444444;
+}
+a:hover,
+a:focus {
+  color: #666666;
+}
+a:active {
+  color: #b2b2b2;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background: red;
+}
+.d-nole {
+  padding: 0;
+  margin: 0;
+}
+.center {
+  margin: 0 auto;
+}
+.v-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
