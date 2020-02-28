@@ -1,42 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <link rel="stylesheet" href="style.css">
-	  <meta charset="utf-8">
-	  <title>Lemon</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Lemon</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
 
-  <body>
-    <header class="page-header">
-      <nav class="page-header__navigation navigation">
-		<picture class="navigation__logo">
-			<source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
-			<img src="img/photo-1-mobile.jpg" width="87" height="36" alt="логотип сайта Lemon">
-		</picture>
-    <ul class="navigation__list">
-      <li class="navigation__item"></li>
-      <li class="navigation__item"></li>
-      <li class="navigation__item"></li>
-      <li class="navigation__item"></li>
-    </ul>
-	  </nav>
-    </header>
+<body>
+  <header class="page-header">
+    <nav class="page-header__navigation navigation">
+      <picture class="navigation__logo">
+        <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+        <img src="img/logo-mobile.svg" width="87" height="36" alt="логотип сайта Lemon">
+      </picture>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="">Home</a></li>
+        <li class="navigation__item"><a href="">recipes</a></li>
+        <li class="navigation__item"><a href="">Foto galleries</a></li>
+        <li class="navigation__item"><a href="">Video</a></li>
+        <li class="navigation__item"><a href="">All categories</a></li>
+      </ul>
+      <p class="navigation__search">find a recipe</p>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Sait of finding recipes</h1>
+    <section class="page-maim__new-recipes recipes">
+      <div class="recipes__wrap slider-wrap">
+        <img class="recipes__logo" src="img/Logo-desktop.svg" width="87" height="36" alt="логотип сайта Lemon">
 
-    <main class="page-main">
+        <h2 class="recipes__title">Bananas Foster Ice Cream Cake</h2>
+        <p class="recipes__descripthion">If you're looking for decadence, look no further — you've found the Holy Grail of desserts. Honestly, this cake makes us wonder why Bananas Foster hasn't always been served on top of ice cream cake.</p>
+        <a href="" class="recipes__button button">get it recipe</a>
+        <img class="recipes__image" src="img/Photo-first.jpg" alt="Photo of two beatyfull cakes">
+        <div class="slider__button-wrap">
+          <button class="slider__button slider__button" type="button" name="button">1</button>
+          <button class="slider__button slider__button" type="button" name="button">2</button>
+          <button class="slider__button slider__button--active" type="button" name="button">3</button>
+          <button class="slider__button slider__button" type="button" name="button">4</button>
+          <button class="slider__button slider__button" type="button" name="button">5</button>
+        </div>
+      </div>
+    </section>
+    <section class="page-main__recipes-short recipes-short">
+      <div class="recipes-short__wrap">
+        <ul class="recipes-short__list">
+          <li class="recipes-short__item">
+            <img src="img/Photo-1.jpg" alt="" class="recipes-short__image">
+            <h2 class="recipes-short__title">Raspberry & Cream Frozen Yogurt Pie</h2>
+            <p class="recipes-short__info">time like</p>
+          </li>
+          <li class="recipes-short__item">
+            <img src="img/Photo-2.jpg" alt="" class="recipes-short__image">
+            <h2 class="recipes-short__title">Giant Ice Cream Sandwich</h2>
+            <p class="recipes-short__info">time like</p>
+          </li>
+          <li class="recipes-short__item">
+            <img src="img/Photo-3.jpg" alt="" class="recipes-short__image">
+            <h2 class="recipes-short__title">Dark Chocolate Crunch Ice Cream
+              Sandwich Cake</h2>
+            <p class="recipes-short__info">time like</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-main__popular popular">
+      <div class="popular__wrap">
+        <h2 class="popular__title">popular now</h2>
+        <h3 class="popular__recipe-name">Vanilla Frozen Coffee</h3>
+        <p class="popular__recipe-text">Mix coffee, sugar and creamer.
+          Pour into blender and add ice cubes.
+          Blend until smooth.</p>
+        <a class="popular__button button" href="">get it recipe</a>
+        <p class="popular__short-info">time like</p>
+      </div>
+    </section>
 
-    </main>
-    <footer class="page-footer">
+  </main>
+  <footer class="footer">
+    <div class="footer__wrap">
+      <img class="footer__logo" src="img/logo-mobile.svg" alt="" width="100" height="40">
+      <div class="footer__pages-wrap">
+        <ul class="footer__pages-list">
+          <li class="footer__pages-item"><a href="">Home</a></li>
+          <li class="footer__pages-item"><a href="">recipes</a></li>
+          <li class="footer__pages-item"><a href="">Foto galleries</a></li>
+          <li class="footer__pages-item"><a href="">Video</a></li>
+          <li class="footer__pages-item"><a href="">All categories</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item"><span class="visually-hidden">Google+</span></li>
+          <li class="footer__social-item"><span class="visually-hidden">Twiter</span></li>
+          <li class="footer__social-item"><span class="visually-hidden">Facebook</span></li>
+          <li class="footer__social-item"><span class="visually-hidden">Pinterest</span></li>
+        </ul>
+      </div>
+      <p class="footer__rights"></p>
+    </div>
 
-    </footer>
+  </footer>
 
 
   <script src="JS/script.js"></script>
-  </body>
+</body>
 
 </html>
 <!-- <picture>
