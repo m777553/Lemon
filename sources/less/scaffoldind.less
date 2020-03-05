@@ -1,18 +1,29 @@
 @font-face {
-  font-family: OpenSans;
-  src: url(../Fonts/open-sans-v17-cyrillic_latin-300.woff2) format("woff2"),
-  url(../Fonts/open-sans-v17-cyrillic_latin-300.woff) format("woff");
+  font-family: Josefin;
+  src: url(../Fonts/josefin-sans-v14-latin-300.woff2) format("woff2"),
+  url(../Fonts/josefin-sans-v14-latin-300.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: OpenSans;
-  src: url(../Fonts/open-sans-v17-cyrillic_latin-700.woff2) format("woff2"),
-  url(../Fonts/open-sans-v17-cyrillic_latin-700.woff) format("woff");
+  font-family: Josefin;
+  src: url(../Fonts/josefin-sans-v14-latin-700.woff2) format("woff2"),
+  url(../Fonts/josefin-sans-v14-latin-700.woff) format("woff");
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: Playfair;
+  src: url(../Fonts/playfair-display-v20-latin-900.woff2) format("woff2"),
+  url(../Fonts/playfair-display-v20-latin-900.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 
 html {
   box-sizing: border-box;
@@ -27,22 +38,23 @@ body {
   padding: 0;
 
 
-  font-size: 17px;
-  line-height: 30px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  color: @text-gray;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Josefin", "Arial", sans-serif;
+  color: @text;
   font-style: normal;
 
-  background-color: @bg-white;
-  color: @text-gray;
+  background-color: @bg;
 }
 ul {
   list-style: none;
+  .d-nole;
 }
 
 a {
+  text-transform: uppercase;
   text-decoration: none;
-  color: @text-gray;
+  color: @text;
 
   &:hover, &:focus {
     color: @text-hover;
@@ -75,7 +87,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-body {
-	background: red;
-}
-

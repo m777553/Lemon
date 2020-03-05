@@ -15,7 +15,7 @@ gulp.task('less', function () {
 
     .pipe(gulp.dest("sources/css")) // путь к папке, куда помещаем конечные файлы
 	.pipe(server.stream());
-	
+
 });
 
 
@@ -27,11 +27,11 @@ gulp.task('less', function () {
   });
   gulp.watch('sources/less/**/*.less', gulp.series("less"), server.reload);
   //gulp.watch('sources/*.html', server.reload);
-  
+
 });
 
 //запрос на просмотр изменений в less и компиляция в css
 //series перезапускает задачу less
-gulp.task('ctrlc', function () {
+gulp.task('c', function () {
     gulp.watch('sources/less/**/*.less', gulp.series('less')); //series - перезапуск задачи LESS
 });
